@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mod 5 </title>
+  </head>
+  <body>
+
+    <form id="mynewform">
+      First Name:<br/>
+         <input type="text" id="fname" required><br>
+      Last Name: <br>
+         <input type="text" id="lname" required><br>
+      Address: <br>
+         <input type="text" id="address" required><br>
+      City: <br>
+         <input type="text" id="city" required><br>
+      State: <br>
+         <input type="text" id="state" required>
+           <br/>
+
+    <button type="button" onclick="myfunction()" id="mybutton" value="Submit" >Save</button>
+  </form>
+
+<div id="mybox"></div>
+
+<script>
+function myFunction() {
+ document.getElementById("mynewform").submit();
+ var firstname="myfname";
+  var lastname="mylname";
+  var addy="myaddress";
+  var city="mycity";
+  var state1="mystate";
+  //to get the value typed into the fname input field
+  firstname = $("#fname").val();
+  lastname = $("#lname").val();
+  addy = $("#address").val();
+  city = $("#city").val();
+  state1 = $("#state").val();
+}
+
+</script>
+
+  </body>
+</html>
